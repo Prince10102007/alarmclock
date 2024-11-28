@@ -1,0 +1,250 @@
+body {
+    background-color: black;
+}
+
+#clock {
+    height: 200px;
+    width: 600px;
+    background-color: lightgoldenrodyellow;
+    margin-left: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.time {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    font-size: 70px;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#dot1, #dot2 {
+    height: 100px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+#contan {
+    height: 120px;
+    width: 600px;
+    margin-left: 460px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.set {
+    height: 80px;
+    width: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#selecthour, #sminute, #secondsd {
+    height: 80px;
+    width: 150px;
+    background-color: aquamarine;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 15px;
+    text-align: center;
+    border: 4px solid black;
+    cursor: pointer;
+}
+
+#but {
+    height: 100px;
+    width: 600px;
+    margin-left: 460px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#setalarm, #clearalarm {
+    height: 80px;
+    width: 180px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    font-size: xx-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#setalarm:hover, #clearalarm:hover {
+    background-color: lightpink;
+    transition: 0.5s;
+    font-size: x-large;
+    height: 85px;
+    width: 185px;
+}
+
+#names {
+    height: 100px;
+    width: 600px;
+    background-color: lightpink;
+    margin-left: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 15px;
+}
+
+p {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#alarmtext {
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#atext {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+
+#aa {
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    #clock {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #contan {
+        width: 90%;
+        margin-left: 5%;
+        gap: 30px;
+    }
+
+    #but {
+        width: 90%;
+        margin-left: 5%;
+        gap: 30px;
+    }
+
+    #names {
+        width: 90%;
+        margin-left: 5%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    #clock {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .time {
+        font-size: 50px;
+        height: 80px;
+        width: 80px;
+    }
+
+    #dot1, #dot2 {
+        font-size: 60px;
+    }
+
+    #contan {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #but {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #setalarm, #clearalarm {
+        font-size: large;
+        width: 100%;
+        height: 70px;
+    }
+
+    #names {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #clock {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .time {
+        font-size: 40px;
+        height: 70px;
+        width: 70px;
+    }
+
+    #dot1, #dot2 {
+        font-size: 50px;
+    }
+
+    #setalarm, #clearalarm {
+        font-size: medium;
+        width: 100%;
+        height: 60px;
+    }
+
+    #contan {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #but {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #names {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+}
